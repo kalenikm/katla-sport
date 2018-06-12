@@ -52,6 +52,11 @@ namespace KatlaSport.DataAccess.ProductCatalogue
         public DateTime LastUpdated { get; set; }
 
         /// <summary>
+        /// Gets or sets a product category description.
+        /// </summary>
+        public string Description { get; set; }
+
+        /// <summary>
         /// Gets or sets a collection of products for the product category.
         /// </summary>
         public virtual ICollection<CatalogueProduct> Products { get; set; }
