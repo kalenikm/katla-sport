@@ -73,6 +73,14 @@
     <Compile Include="Migrations\201806121643276_AddProductDescriptionManCodePrice.Designer.cs">
       <DependentUpon>201806121643276_AddProductDescriptionManCodePrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806151502594_DeleteProductDescriptionManCodePrice.cs" />
+    <Compile Include="Migrations\201806151502594_DeleteProductDescriptionManCodePrice.Designer.cs">
+      <DependentUpon>201806151502594_DeleteProductDescriptionManCodePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806151509187_AnddNewProductDescriptionManCodePrice.cs" />
+    <Compile Include="Migrations\201806151509187_AnddNewProductDescriptionManCodePrice.Designer.cs">
+      <DependentUpon>201806151509187_AnddNewProductDescriptionManCodePrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +99,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806121643276_AddProductDescriptionManCodePrice.resx">
       <DependentUpon>201806121643276_AddProductDescriptionManCodePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806151502594_DeleteProductDescriptionManCodePrice.resx">
+      <DependentUpon>201806151502594_DeleteProductDescriptionManCodePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806151509187_AnddNewProductDescriptionManCodePrice.resx">
+      <DependentUpon>201806151509187_AnddNewProductDescriptionManCodePrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
