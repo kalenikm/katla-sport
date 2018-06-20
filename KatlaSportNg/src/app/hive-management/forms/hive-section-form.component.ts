@@ -31,7 +31,10 @@ export class HiveSectionFormComponent implements OnInit {
     this.route.params.subscribe(p => {
       if (p['hiveId'] !== undefined) {
         this._hiveId = parseInt(p['hiveId']);
-        this.hiveService.getHive(this._hiveId).subscribe(h => this.hiveSection.hiveId = this._hiveId);
+        this.hiveService.getHive(this._hiveId).subscribe(
+          h => this.hiveSection.hiveId = h.id,
+          error => this.router.navigate([`/hives`])
+        );
         this.existed = false;
         return;
       }});
