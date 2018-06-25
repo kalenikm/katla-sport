@@ -29,8 +29,7 @@ namespace KatlaSport.Services.Tests.HiveManagement
 
         public HiveManagementServiceTests()
         {
-            Mapper.Reset();
-            Mapper.Initialize(m => m.AddProfile(new HiveManagementMappingProfile()));
+            MapperInitializer.Initialize();
         }
 
         [Fact]
